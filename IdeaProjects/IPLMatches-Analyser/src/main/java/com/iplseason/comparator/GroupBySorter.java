@@ -6,8 +6,7 @@ import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
 
-public class GroupBySorter implements Comparator<IplMostRunsData> {
-    private List<Comparator<IplMostRunsData>> listComparators;
+public class GroupBySorter implements Comparator<IplMostRunsData> { private List<Comparator<IplMostRunsData>> listComparators;
 
     public GroupBySorter(Comparator<IplMostRunsData>... comparators) {
         this.listComparators = Arrays.asList(comparators);
